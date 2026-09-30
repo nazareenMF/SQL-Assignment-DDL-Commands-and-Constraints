@@ -97,7 +97,7 @@ DROP COLUMN age;
 
 -- Rename hire_date column to date_of_joining
 ALTER TABLE employees 
-CHANGE hire_date date_of_joining DATE;
+RENAME COLUMN  hire_date TO date_of_joining;
 ```
 
 ---
@@ -170,10 +170,9 @@ CREATE TABLE employees (
 
 ## 🚀 How to Run
 
-1. Open **MySQL Workbench** or your preferred SQL client (e.g., DBeaver, Command Line Client).
+1. Open **MySQL Workbench** 
 2. Connect to your local MySQL server instance.
-3. Open or copy-paste the SQL script into a query editor tab.
-4. Execute statements sequentially or run the full schema recreation script.
+3. Execute statements sequentially or run the full schema recreation script.
 
 ---
 
